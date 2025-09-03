@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>The Dead Man's Switch - Taktikmagier</name>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
+  	<author>AobaKuma ,Bill Doors, KV4EX</author>
+    <supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Aoba.DeadManSwitch.Taktikmagier</packageId>
+    <modDependencies>
+        <li>
+			<packageId>Aoba.DeadManSwitch.Core</packageId>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3121742525</steamWorkshopUrl>
+			<displayName>Dead Man Switch</displayName>
+		</li>		
+		<li>
+			<packageId>VanillaExpanded.VPsycastsE</packageId>
+			<displayName>Vanilla Psycasts Expanded</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Aoba.DeadManSwitch.Core</li>
+		<li>brrainz.harmony</li>
+		<li>VanillaExpanded.VPsycastsE</li>
+		<li>vanillaexpanded.achievements</li>
+  	</loadAfter>
+	<description>Millennia earlier, as the threat of archotech war machines, pirates and awry bio-organic weapons arise. Nara Industries initiated a project of semi-automated war-machines, which aimed at creating a legion of war-machines with low technology and maintenance requirements to aid humans in all galaxy to the war against all those threats.</description>
+</ModMetaData>

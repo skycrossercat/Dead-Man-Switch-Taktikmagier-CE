@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_Flash</defName>
+		<!-- 強光綻放 -->
+		<label>Assault flash</label>
+		<description>Flash.</description>
+		<iconPath>Abilities/Militarmagier/flashlight</iconPath>
+		<range>10.9</range>
+		<radius>12</radius>
+		<castTime>15</castTime>
+		<durationTime>300</durationTime>
+		<cooldownTime>3600</cooldownTime>
+		<abilityClass>Militarmagier.Ability_Flash</abilityClass>
+		<targetMode>Location</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>1</level>
+				<order>1</order>
+				<psyfocusCost>0.05</psyfocusCost>
+				<entropyGain>25</entropyGain>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_Repel</defName>
+		<label>repel</label>
+		<description>repel.</description>
+		<iconPath>Abilities/Militarmagier/push</iconPath>
+		<radius>5.9</radius>
+		<castTime>15</castTime>
+		<durationTime>300</durationTime>
+		<cooldownTime>3600</cooldownTime>
+		<abilityClass>Militarmagier.Ability_Repel</abilityClass>
+		<targetMode>Self</targetMode>
+		<hasAoE>true</hasAoE>
+		<targetingParametersForAoE>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+		</targetingParametersForAoE>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>1</level>
+				<order>2</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>25</entropyGain>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Explosion">
+				<explosionRadius>5.9</explosionRadius>
+				<onCaster>true</onCaster>
+				<explosionDamageDef>RepelShockWave</explosionDamageDef>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_Swap</defName>
+		<label>Transposition</label>
+		<description>swap.</description>
+		<iconPath>Abilities/Militarmagier/swap</iconPath>
+		<range>18.9</range>
+		<castTime>120</castTime>
+		<cooldownTime>1200</cooldownTime>
+		<abilityClass>Militarmagier.Ability_Swap</abilityClass>
+		<targetMode>Pawn</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>2</level>
+				<order>1</order>
+				<psyfocusCost>0.02</psyfocusCost>
+				<entropyGain>10</entropyGain>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_ConstructTurret</defName>
+		<label>summon turret</label>
+		<description>summon turret.</description>
+		<iconPath>Abilities/Militarmagier/summonTurret</iconPath>
+		<range>8.9</range>
+		<castTime>180</castTime>
+		<cooldownTime>1200</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetingParameters>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			<thingCategory>Item</thingCategory>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>5</entropyGain>
+			</li>
+			<!-- 			<li Class="Militarmagier.AbilityExtension_Construct">
+				<constructDef>ThingDef</constructDef>
+				<costDef>ComponentIndustrial</costDef>
+				<heat>50</heat>
+			</li> -->
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<!--把这个加到构筑物的comps里 	
+	<comps>
+		<li Class="Militarmagier.CompProperties_BreakLink">
+			<gizmoImage>Effects/Technomancer/BreakLink/BreakLinkRockConstruct</gizmoImage>
+			<gizmoLabel>VPE_BreakLink</gizmoLabel>
+			<gizmoDesc>VPE_BreakLinkDesc</gizmoDesc>
+		</li>
+	</comps> -->
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_ConstructPawn</defName>
+		<label>assemble gargoyle construct</label>
+		<description>assemble construct from stampoments.</description>
+		<iconPath>Abilities/Militarmagier/summonMech</iconPath>
+		<range>8.9</range>
+		<castTime>60</castTime>
+		<cooldownTime>1200</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetMode>Pawn</targetMode>
+		<castTime>360</castTime>
+		<needsTicking>true</needsTicking>
+		<showUndrafted>true</showUndrafted>
+		<targetingParameters>
+			<canTargetItems>true</canTargetItems>
+			<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			<thingCategory>Item</thingCategory>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>3</level>
+				<order>1</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>5</entropyGain>
+			</li>
+			<li Class="Militarmagier.AbilityExtension_ConstructPawn">
+				<constructDef>DMST_Construct_Gargoyle</constructDef>
+				<costDef>ComponentStamped</costDef>
+				<heat>50</heat>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>10</preCastTicks>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_QuickDraw</defName>
+		<label>quick draw</label>
+		<description>quick draw.</description>
+		<iconPath>Abilities/Militarmagier/quickdraw</iconPath>
+		<castTime>0</castTime>
+		<durationTime>300</durationTime>
+		<cooldownTime>600</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetMode>Self</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>3</level>
+				<order>2</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>10</entropyGain>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Hediff">
+				<hediff>DMS_QuickDraw</hediff>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_EmpBurst</defName>
+		<label>emp burst</label>
+		<description>Emp burst.</description>
+		<iconPath>Abilities/Militarmagier/empBurst</iconPath>
+		<castTime>60</castTime>
+		<cooldownTime>3600</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Explode</abilityClass>
+		<radius>14.9</radius>
+		<targetMode>Self</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>4</level>
+				<order>1</order>
+				<psyfocusCost>0.01</psyfocusCost>
+				<entropyGain>10</entropyGain>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_Explosion">
+				<explosionRadius>14.9</explosionRadius>
+				<onCaster>true</onCaster>
+				<explosionDamageDef>EMP</explosionDamageDef>
+				<explosionDamageAmount>20</explosionDamageAmount>
+				<casterImmune>true</casterImmune>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_FieldAid</defName>
+		<label>field aid</label>
+		<description>field aid.</description>
+		<iconPath>Abilities/Militarmagier/heal</iconPath>
+		<range>3.9</range>
+		<castTime>300</castTime>
+		<cooldownTime>600</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetingParameters>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>true</canTargetSelf>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>4</level>
+				<order>2</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>20</entropyGain>
+			</li>
+			<li Class="Militarmagier.AbilityExtension_Heal">
+				<tendQualityRange>0.4~0.8</tendQualityRange>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_ForceWake</defName>
+		<label>force wake</label>
+		<description>force wake.</description>
+		<iconPath>Abilities/Militarmagier/forceWake</iconPath>
+		<castTime>120</castTime>
+		<cooldownTime>1200</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetMode>Self</targetMode>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>14</entropyGain>
+			</li>
+			<li Class="Militarmagier.AbilityExtension_Calm">
+				<thought>DMS_ForceWake</thought>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+	
+	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>DMS_Demolish</defName>
+		<label>demolish</label>
+		<description>demolish.</description>
+		<iconPath>Abilities/Militarmagier/demolish</iconPath>
+		<range>10.9</range>
+		<castTime>90</castTime>
+		<cooldownTime>1200</cooldownTime>
+		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+		<targetingParameters>
+			<canTargetPawns>false</canTargetPawns>
+		</targetingParameters>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>DMS_Militarmagier</path>
+				<level>5</level>
+				<order>2</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>10</entropyGain>
+			</li>
+			<li Class="Militarmagier.AbilityExtension_Destroy">
+				<destroyPoints>300</destroyPoints>
+				<undestroyFactor>0.5</undestroyFactor>
+			</li>
+		</modExtensions>
+	</VEF.Abilities.AbilityDef>
+</Defs>
