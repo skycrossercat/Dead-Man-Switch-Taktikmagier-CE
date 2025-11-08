@@ -8,9 +8,12 @@
       <li>DMST_Apparel_MagierHelmet</li>
       <li>DMS_Apparel_StealthMask</li>
       <li>DMS_Apparel_PowerSkeleton</li>
-      <li>DMS_Apparel_TacticalCloak</li>
+      <li>DMST_Apparel_MagierCloak</li>
       <li>DMS_Apparel_TacticalVest</li>
     </apparelRequired>
+    <apparelTags>
+      <li>DMST_Magier</li>
+    </apparelTags>
     <weaponMoney>2500~5000</weaponMoney>
     <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_WarrantOfficer</titleRequired>
     <weaponTags>

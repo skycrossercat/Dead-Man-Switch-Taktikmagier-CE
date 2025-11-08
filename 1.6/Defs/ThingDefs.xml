@@ -31,11 +31,11 @@
 				<labelOverride>Battery power</labelOverride>
 				<tooltipOverride>This turret has a limited battery life. Once it runs out, it will stop working entirely.</tooltipOverride>
 			</li>
-			<!-- <li Class="Militarmagier.CompProperties_BreakLink">
+			<li Class="VanillaPsycastsExpanded.CompProperties_BreakLink">
 				<gizmoImage>Effects/Technomancer/BreakLink/BreakLinkRockConstruct</gizmoImage>
 				<gizmoLabel>VPE_BreakLink</gizmoLabel>
 				<gizmoDesc>VPE_BreakLinkDesc</gizmoDesc>
-			</li> -->
+			</li>
 		</comps>
 		<building>
 			<turretGunDef>DMS_SubMachineGunMounted</turretGunDef>

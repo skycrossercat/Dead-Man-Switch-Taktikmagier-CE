@@ -105,7 +105,7 @@
 			</li>
 			<li Class="Militarmagier.AbilityExtension_Construct">
 				<constructDef>DMST_Turret_Sentry</constructDef>
-				<costDef>ComponentIndustrial</costDef>
+				<costDef>ComponentStamped</costDef>
 				<heat>50</heat>
 			</li>
 		</modExtensions>

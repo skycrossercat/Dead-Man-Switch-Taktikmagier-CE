@@ -64,7 +64,7 @@
 
 	<!-- 戰術斗篷，給戰術女巫和狙擊手用的 -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>DMST_Apparel_TacticalCloak</defName>
+		<defName>DMST_Apparel_MagierCloak</defName>
 		<label>Magier cloak</label>
 		<description>An active optical camouflage cloak equipped by magiers. It has an active camouflage ability driven by psychic power, which consumes psychic entropy. requires a magier helmet to be effective.</description>
 		<recipeMaker />
@@ -80,13 +80,13 @@
 			<li>ApparelMisc</li>
 		</thingCategories>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
+			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>3</Mass>
-			<Flammability>0.3</Flammability>
+			<Flammability>0</Flammability>
 			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<costStuffCount>100</costStuffCount>
