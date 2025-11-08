@@ -85,6 +85,7 @@
 		<range>8.9</range>
 		<castTime>180</castTime>
 		<cooldownTime>1200</cooldownTime>
+		<needsTicking>true</needsTicking>
 		<abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
 		<targetingParameters>
 			<canTargetItems>true</canTargetItems>
