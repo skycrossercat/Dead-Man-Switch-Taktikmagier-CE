@@ -2,7 +2,6 @@
 <Defs>
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMS_Flash</defName>
-		<!-- 強光綻放 -->
 		<label>Assault flash</label>
 		<description>透過引導靈能震動空間來產生爆發性的定向強光與噪音，其威力足以使扇形波及範圍內的生物與機械傳感器短暫失明，這經常被用於針對施法者的戰鬥，並輔以槍械在對方失明時給上致命一擊。</description>
 		<iconPath>Abilities/Militarmagier/flashlight</iconPath>
@@ -107,6 +106,20 @@
 				<constructDef>DMST_Turret_Sentry</constructDef>
 				<costDef>ComponentStamped</costDef>
 				<heat>50</heat>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_FleckOnTarget">
+				<fleckDefs>
+					<li>PsycastSkipInnerExit</li>
+					<li>PsycastSkipOuterRingExit</li>
+				</fleckDefs>
+				<scale>0.42</scale>
+				<sound>Psycast_Skip_Exit</sound>
+				<preCastTicks>10</preCastTicks>
+			</li>
+			<li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+				<effecterDef>Skip_Exit</effecterDef>
+				<maintainForTicks>60</maintainForTicks>
+				<scale>0.42</scale>
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
@@ -268,7 +281,7 @@
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMST_Demolish</defName>
 		<label>demolish</label>
-		<description>透過對事物構造的了解，軍術士們能夠直接操作零件的位置來甚至在分子層面上斷開纏結的分子鏈，以此來達到將物體解體的能力。這項技巧被廣泛用於爆炸物拆除與癱瘓精密設備，並對機械體與砲塔這樣的零件構造物來說非常合適。</description>
+		<description>透過對事物構造的了解，軍術士們能夠直接操作零件的位置來甚至在分子層面上斷開纏結的分子鏈，以此來達到將物體解體的能力。這項技巧被廣泛用於爆炸物拆除與癱瘓精密設備，並對建築與砲塔這樣的靜態物體來說非常合適。</description>
 		<iconPath>Abilities/Militarmagier/demolish</iconPath>
 		<range>10.9</range>
 		<castTime>90</castTime>
@@ -286,8 +299,8 @@
 				<entropyGain>10</entropyGain>
 			</li>
 			<li Class="Militarmagier.AbilityExtension_Destroy">
-				<destroyPoints>600</destroyPoints>
-				<undestroyFactor>0.5</undestroyFactor>
+				<destroyPoints>800</destroyPoints>
+				<undestroyFactor>0.25</undestroyFactor>
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
