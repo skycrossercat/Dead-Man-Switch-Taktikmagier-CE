@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="VPE_ConstructBase">
@@ -9,7 +9,7 @@
 		<statBases>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
-			<MarketValue>150</MarketValue>      
+			<MarketValue>150</MarketValue>
 			<MoveSpeed>4.2</MoveSpeed>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp><!--銳抗-->
 			<ArmorRating_Blunt>0.1</ArmorRating_Blunt><!--鈍抗-->
@@ -25,11 +25,11 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			</li>		
+			</li>
 			<li>
 				<label>left fist</label>
 				<capacities>
-				<li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>12.0</power>
 				<cooldownTime>2</cooldownTime>
@@ -39,7 +39,7 @@
 			<li>
 				<label>right fist</label>
 				<capacities>
-				<li>Blunt</li>
+					<li>Blunt</li>
 				</capacities>
 				<power>12.0</power>
 				<cooldownTime>2</cooldownTime>
@@ -61,11 +61,14 @@
 				<gizmoDesc>VPE_BreakLinkDesc</gizmoDesc>
 			</li>
 			<li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
-				<hediffsToRemove><li>Animal_Plague</li><li>Animal_Flu</li><li>AB_AnimalSporesAllergy</li></hediffsToRemove>
+				<hediffsToRemove>
+					<li>Animal_Plague</li>
+					<li>Animal_Flu</li>
+					<li>AB_AnimalSporesAllergy</li>
+				</hediffsToRemove>
 				<tickInterval>2000</tickInterval>
 			</li>
-			<li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity">
-			</li>
+			<li Class="VEF.AnimalBehaviours.CompProperties_DiseaseEventImmunity" />
 		</comps>
 		<race>
 			<deathAction>
@@ -105,7 +108,7 @@
 				<UsableTechLevels>
 					<li>Industrial</li>
 				</UsableTechLevels>
-				<BypassUsableWeapons/>
+				<BypassUsableWeapons />
 			</li>
 			<li Class="Fortified.TurretMannableExtension">
 				<mannableByDefault>false</mannableByDefault>

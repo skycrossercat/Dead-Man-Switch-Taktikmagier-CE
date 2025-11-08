@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="DMS_SoldierBase">
+    <defName>DMST_Taktikmagier</defName>
+    <label>Tactical magier</label>
+    <apparelRequired>
+      <li>DMS_Apparel_Gunlink</li>
+      <li>DMST_Apparel_MagierHelmet</li>
+      <li>DMS_Apparel_StealthMask</li>
+      <li>DMS_Apparel_PowerSkeleton</li>
+      <li>DMS_Apparel_TacticalCloak</li>
+      <li>DMS_Apparel_TacticalVest</li>
+    </apparelRequired>
+    <weaponMoney>2500~5000</weaponMoney>
+    <titleRequired MayRequire="Ludeon.RimWorld.Royalty">DMS_WarrantOfficer</titleRequired>
+    <weaponTags>
+      <li>A_AR_LongRifle</li>
+    </weaponTags>
+    <immuneToTraps>true</immuneToTraps>
+    <canOpenAnyDoor>true</canOpenAnyDoor>
+    <aiAvoidCover>false</aiAvoidCover>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+    <specificApparelRequirements>
+      <li>
+        <colorGenerator Class="ColorGenerator_Options">
+          <options>
+            <li>
+              <only>(90, 100, 90)</only>
+            </li>
+          </options>
+        </colorGenerator>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>Middle</apparelLayer>
+        <stuff>DMS_Ceramics</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <apparelLayer>Overhead</apparelLayer>
+        <stuff>Plasteel</stuff>
+        <color>(200,200,200)</color>
+      </li>
+    </specificApparelRequirements>
+    <humanPregnancyChance>0.45</humanPregnancyChance>
+    <fixedGender>Female</fixedGender>
+    <maxGenerationAge>24</maxGenerationAge>
+    <modExtensions>
+      <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+        <implantDef>VPE_PsycastAbilityImplant</implantDef>
+        <initialLevel>4</initialLevel>
+        <statUpgradePoints>2~6</statUpgradePoints>
+        <unlockedPaths>
+          <DMST_Militarmagier>1~4|2~10</DMST_Militarmagier>
+        </unlockedPaths>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+</Defs>

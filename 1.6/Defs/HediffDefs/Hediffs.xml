@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<HediffDef ParentName="PsycastHediffBase">
-		<defName>DMS_QuickDraw</defName>
+		<defName>DMST_QuickDraw</defName>
 		<label>quick draw</label>
 		<description>quick draw.</description>
 		<isBad>false</isBad>

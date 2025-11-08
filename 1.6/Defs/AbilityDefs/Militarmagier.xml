@@ -4,7 +4,7 @@
 		<defName>DMS_Flash</defName>
 		<!-- 強光綻放 -->
 		<label>Assault flash</label>
-		<description>Flash.</description>
+		<description>透過引導靈能震動空間來產生爆發性的定向強光與噪音，其威力足以使扇形波及範圍內的生物與機械傳感器短暫失明，這經常被用於針對施法者的戰鬥，並輔以槍械在對方失明時給上致命一擊。</description>
 		<iconPath>Abilities/Militarmagier/flashlight</iconPath>
 		<range>10.9</range>
 		<radius>12</radius>
@@ -15,7 +15,7 @@
 		<targetMode>Location</targetMode>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>1</level>
 				<order>1</order>
 				<psyfocusCost>0.05</psyfocusCost>
@@ -23,7 +23,7 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMS_Repel</defName>
 		<label>repel</label>
@@ -43,7 +43,7 @@
 		</targetingParametersForAoE>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>1</level>
 				<order>2</order>
 				<psyfocusCost>0.04</psyfocusCost>
@@ -56,7 +56,7 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMS_Swap</defName>
 		<label>Transposition</label>
@@ -69,7 +69,7 @@
 		<targetMode>Pawn</targetMode>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>2</level>
 				<order>1</order>
 				<psyfocusCost>0.02</psyfocusCost>
@@ -77,11 +77,11 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMS_ConstructTurret</defName>
-		<label>summon turret</label>
-		<description>summon turret.</description>
+		<label>assemble turret construct</label>
+		<description>將施術者的少量心靈熵轉化為形而上的水晶，並以標準生產的沖壓零件作為骨架來組裝成一個臨時的自動砲塔。該砲塔透過注入的能量來維持其索敵與開火，並在被摧毀時爆炸。</description>
 		<iconPath>Abilities/Militarmagier/summonTurret</iconPath>
 		<range>8.9</range>
 		<castTime>180</castTime>
@@ -97,33 +97,24 @@
 		</targetingParameters>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>3</level>
 				<order>1</order>
 				<psyfocusCost>0.01</psyfocusCost>
 				<entropyGain>5</entropyGain>
 			</li>
-			<!-- 			<li Class="Militarmagier.AbilityExtension_Construct">
-				<constructDef>ThingDef</constructDef>
+			<li Class="Militarmagier.AbilityExtension_Construct">
+				<constructDef>DMST_Turret_Sentry</constructDef>
 				<costDef>ComponentIndustrial</costDef>
 				<heat>50</heat>
-			</li> -->
+			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
-	<!--把这个加到构筑物的comps里 	
-	<comps>
-		<li Class="Militarmagier.CompProperties_BreakLink">
-			<gizmoImage>Effects/Technomancer/BreakLink/BreakLinkRockConstruct</gizmoImage>
-			<gizmoLabel>VPE_BreakLink</gizmoLabel>
-			<gizmoDesc>VPE_BreakLinkDesc</gizmoDesc>
-		</li>
-	</comps> -->
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>DMS_ConstructPawn</defName>
 		<label>assemble gargoyle construct</label>
-		<description>assemble construct from stampoments.</description>
+		<description>將施術者的少量心靈熵轉化為形而上的水晶，並以標準生產的沖壓零件作為骨架組裝成機械構裝體。施術者對於構裝體有著完全的控制並能夠使役其操作槍械作為火力支援。當核心水晶被擊毀後，所佔用的心靈熵容量會返還。</description>
 		<iconPath>Abilities/Militarmagier/summonMech</iconPath>
 		<range>8.9</range>
 		<castTime>60</castTime>
@@ -143,7 +134,7 @@
 		</targetingParameters>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>3</level>
 				<order>1</order>
 				<psyfocusCost>0.01</psyfocusCost>
@@ -170,11 +161,11 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>DMS_QuickDraw</defName>
+		<defName>DMST_QuickDraw</defName>
 		<label>quick draw</label>
-		<description>quick draw.</description>
+		<description>透過電流的直接刺激來使身體透過反射動作來在片刻間完成槍械的瞄準與開火，這種被稱為槍鬥術的近距離射擊技巧能夠有效的對威脅做出快速反應，也經常被直接用來進行近身格鬥。</description>
 		<iconPath>Abilities/Militarmagier/quickdraw</iconPath>
 		<castTime>0</castTime>
 		<durationTime>300</durationTime>
@@ -183,22 +174,22 @@
 		<targetMode>Self</targetMode>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>3</level>
 				<order>2</order>
 				<psyfocusCost>0.01</psyfocusCost>
 				<entropyGain>10</entropyGain>
 			</li>
 			<li Class="VEF.Abilities.AbilityExtension_Hediff">
-				<hediff>DMS_QuickDraw</hediff>
+				<hediff>DMST_QuickDraw</hediff>
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>DMS_EmpBurst</defName>
+		<defName>DMST_EmpBurst</defName>
 		<label>emp burst</label>
-		<description>Emp burst.</description>
+		<description>引導靈能扭曲周圍的磁場線來憑空製造出一個巨大的電磁脈衝，能夠有效的使範圍內的敵人受到EMP以及磁場干擾所導致的嚴重不適。</description>
 		<iconPath>Abilities/Militarmagier/empBurst</iconPath>
 		<castTime>60</castTime>
 		<cooldownTime>3600</cooldownTime>
@@ -207,7 +198,7 @@
 		<targetMode>Self</targetMode>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>4</level>
 				<order>1</order>
 				<psyfocusCost>0.01</psyfocusCost>
@@ -217,16 +208,16 @@
 				<explosionRadius>14.9</explosionRadius>
 				<onCaster>true</onCaster>
 				<explosionDamageDef>EMP</explosionDamageDef>
-				<explosionDamageAmount>20</explosionDamageAmount>
+				<explosionDamageAmount>40</explosionDamageAmount>
 				<casterImmune>true</casterImmune>
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>DMS_FieldAid</defName>
+		<defName>DMST_FieldAid</defName>
 		<label>field aid</label>
-		<description>field aid.</description>
+		<description>透過刺激患者傷口的皮膚組織增生來封閉開放性創口，被用於在交戰中為重傷的同伴或自身快速止血。這是一個非常講求施術者技巧的施法，但同時也是每一個軍術士在訓練時都被要求熟練掌握的基本施法。</description>
 		<iconPath>Abilities/Militarmagier/heal</iconPath>
 		<range>3.9</range>
 		<castTime>300</castTime>
@@ -239,7 +230,7 @@
 		</targetingParameters>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>4</level>
 				<order>2</order>
 				<psyfocusCost>0.04</psyfocusCost>
@@ -250,11 +241,11 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>DMS_ForceWake</defName>
+		<defName>DMST_ForceWake</defName>
 		<label>force wake</label>
-		<description>force wake.</description>
+		<description>透過靈能干涉來強制大腦保持清醒意識並潛意識的用樂觀情緒催眠自己，這對於那些在戰場上高度警惕的施術者們執行長時間任務時十分有用。但頻繁的使用可能會累積大量神經熱而適得其反。</description>
 		<iconPath>Abilities/Militarmagier/forceWake</iconPath>
 		<castTime>120</castTime>
 		<cooldownTime>1200</cooldownTime>
@@ -262,22 +253,22 @@
 		<targetMode>Self</targetMode>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>5</level>
 				<order>1</order>
 				<psyfocusCost>0.04</psyfocusCost>
 				<entropyGain>14</entropyGain>
 			</li>
 			<li Class="Militarmagier.AbilityExtension_Calm">
-				<thought>DMS_ForceWake</thought>
+				<thought>DMST_ForceWake</thought>
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
-	
+
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>DMS_Demolish</defName>
+		<defName>DMST_Demolish</defName>
 		<label>demolish</label>
-		<description>demolish.</description>
+		<description>透過對事物構造的了解，軍術士們能夠直接操作零件的位置來甚至在分子層面上斷開纏結的分子鏈，以此來達到將物體解體的能力。這項技巧被廣泛用於爆炸物拆除與癱瘓精密設備，並對機械體與砲塔這樣的零件構造物來說非常合適。</description>
 		<iconPath>Abilities/Militarmagier/demolish</iconPath>
 		<range>10.9</range>
 		<castTime>90</castTime>
@@ -288,14 +279,14 @@
 		</targetingParameters>
 		<modExtensions>
 			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>DMS_Militarmagier</path>
+				<path>DMST_Militarmagier</path>
 				<level>5</level>
 				<order>2</order>
 				<psyfocusCost>0.04</psyfocusCost>
 				<entropyGain>10</entropyGain>
 			</li>
 			<li Class="Militarmagier.AbilityExtension_Destroy">
-				<destroyPoints>300</destroyPoints>
+				<destroyPoints>600</destroyPoints>
 				<undestroyFactor>0.5</undestroyFactor>
 			</li>
 		</modExtensions>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <BackstoryDef Name="DMST_BaseBackstory" Abstract="true">
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DMST_Magier</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+  <BackstoryDef ParentName="DMST_BaseBackstory">
+    <defName>DMST_Magier01</defName>
+    <title>Retired Medic</title>
+    <titleShort>Medic</titleShort>
+    <description>[PAWN_nameDef] served as a medic in the Armed Forces and retired from military life prematurely after a serious injury.</description>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <Shooting>8</Shooting>
+      <Medicine>16</Medicine>
+    </skillGains>
+  </BackstoryDef>
+
+</Defs>
