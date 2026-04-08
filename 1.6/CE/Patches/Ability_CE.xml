@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMS_Flash"]/range</xpath>
+		<value>
+			<range>15</range>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMS_Repel"]/radius</xpath>
+		<value>
+			<radius>8</radius>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMS_Repel"]/modExtensions/li[@Class="VEF.Abilities.AbilityExtension_Explosion"]/explosionRadius</xpath>
+		<value>
+			<explosionRadius>8</explosionRadius>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMS_Swap"]/range</xpath>
+		<value>
+			<range>24</range>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMS_ConstructTurret" or defName="DMS_ConstructPawn"]/range</xpath>
+		<value>
+			<range>12</range>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMST_EmpBurst"]/cooldownTime</xpath>
+		<value>
+			<cooldownTime>5400</cooldownTime>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMST_EmpBurst"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]/psyfocusCost</xpath>
+		<value>
+			<psyfocusCost>0.2</psyfocusCost>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMST_EmpBurst"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]/entropyGain</xpath>
+		<value>
+			<entropyGain>30</entropyGain>
+		</value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMST_Demolish"]/range</xpath>
+		<value>
+			<range>17.5</range>
+		</value>
+</Operation>
+
+
+</Patch>

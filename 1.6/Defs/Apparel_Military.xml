@@ -123,6 +123,9 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<abilities>
+				<li MayRequire="Ludeon.RimWorld.Royalty">DMST_Camouflage</li>
+			</abilities>
 		</apparel>
 	</ThingDef>
 </Defs>

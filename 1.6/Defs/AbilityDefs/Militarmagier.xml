@@ -305,4 +305,36 @@
 			</li>
 		</modExtensions>
 	</VEF.Abilities.AbilityDef>
+
+	<AbilityDef ParentName="DMS_AddHediffSelfBase">
+		<abilityClass>Psycast</abilityClass>
+		<defName>DMST_Camouflage</defName>
+		<label>Psychic Camouflage</label>
+		<description>Blend into the environment by activating morphic camouflage using psychic power combined with special weaving cloak.</description>
+		<iconPath>UI/Ability/Camouflage</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<showPsycastEffects Inherit="False">True</showPsycastEffects>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff" MayRequire="Ludeon.RimWorld.Royalty">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>PsychicInvisibility</hediffDef>
+				<onlyBrain>true</onlyBrain>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+				<psychic>True</psychic>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+        		<fleckDef>PsycastPsychicEffect</fleckDef>
+      		</li>
+		</comps>
+		<verbProperties>
+      		<verbClass Inherit="False">Verb_CastPsycast</verbClass>
+    	</verbProperties>
+		<statBases>
+			<Ability_Duration>45</Ability_Duration>
+			<Ability_EntropyGain>30</Ability_EntropyGain>
+      		<Ability_PsyfocusCost>0.08</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
 </Defs>
