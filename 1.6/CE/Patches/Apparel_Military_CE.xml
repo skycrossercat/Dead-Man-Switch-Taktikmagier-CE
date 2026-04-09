@@ -12,15 +12,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DMST_Apparel_MagierHelmet"]</xpath>
-		<value>
-			<stuffCategories>
-                <li>Metallic</li>
-            </stuffCategories>
-		</value>
-	</Operation>
-
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DMST_Apparel_MagierCloak"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>

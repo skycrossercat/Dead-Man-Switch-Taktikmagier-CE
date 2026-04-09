@@ -46,7 +46,7 @@
 <Operation Class="PatchOperationReplace">
 		<xpath>Defs/VEF.Abilities.AbilityDef[defName="DMST_EmpBurst"]/modExtensions/li[@Class="VanillaPsycastsExpanded.AbilityExtension_Psycast"]/psyfocusCost</xpath>
 		<value>
-			<psyfocusCost>0.2</psyfocusCost>
+			<psyfocusCost>0.07</psyfocusCost>
 		</value>
 </Operation>
 

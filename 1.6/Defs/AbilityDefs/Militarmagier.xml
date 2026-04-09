@@ -333,7 +333,7 @@
 		<statBases>
 			<Ability_Duration>45</Ability_Duration>
 			<Ability_EntropyGain>30</Ability_EntropyGain>
-      		<Ability_PsyfocusCost>0.08</Ability_PsyfocusCost>
+      		<Ability_PsyfocusCost>0.06</Ability_PsyfocusCost>
 		</statBases>
 	</AbilityDef>
 
