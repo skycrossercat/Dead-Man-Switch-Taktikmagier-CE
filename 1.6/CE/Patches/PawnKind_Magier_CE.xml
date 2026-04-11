@@ -7,11 +7,10 @@
 				<li Class="CombatExtended.LoadoutPropertiesExtension">
 					<primaryMagazineCount>
 						<min>3</min>
-						<max>4</max>
+						<max>5</max>
 					</primaryMagazineCount>
 					<sidearms>
 						<li>
-							<generateChance>0.85</generateChance>
 							<sidearmMoney>
 								<min>100</min>
 								<max>250</max>
@@ -19,6 +18,19 @@
 							<weaponTags>
 								<li>CE_Sidearm_Melee</li>
 							</weaponTags>
+						</li>
+						<li>
+							<sidearmMoney>
+								<min>200</min>
+								<max>400</max>
+							</sidearmMoney>
+							<weaponTags>
+								<li>DMS_MechWeaponLight</li>
+							</weaponTags>
+							<magazineCount>
+								<min>1</min>
+								<max>2</max>
+							</magazineCount>
 						</li>
 					</sidearms>
 				</li>
