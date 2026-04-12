@@ -48,7 +48,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<tags>
+			<tags Inherit="False">
 				<li>DMST_Magier</li>
 			</tags>
 		</apparel>
